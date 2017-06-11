@@ -959,7 +959,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background: transparent;
+  background: url("../image/background.jpg");
 }
 .header-inner {
   position: relative;
@@ -998,14 +998,14 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #999;
+  font-size: 18px;
+  color: #fff;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1057,6 +1057,7 @@ pre .javascript .function {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
+  background: rgba(255,255,255,0.7);
 }
 .menu .menu-item {
   display: inline-block;
@@ -1677,7 +1678,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #41f9ff;
+  background: #42ff26;
 }
 .links-of-blogroll {
   font-size: 13px;
