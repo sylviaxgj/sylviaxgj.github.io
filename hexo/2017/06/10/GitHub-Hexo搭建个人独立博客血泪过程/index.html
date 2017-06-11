@@ -93,20 +93,25 @@
 
 
 
-<meta name="description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta name="description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta property="og:url" content="https://sylviaxgj.git@github.io/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/index.html">
 <meta property="og:site_name" content="Sylvia&#39; Blog">
-<meta property="og:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta property="og:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg">
-<meta property="og:updated_time" content="2017-06-11T11:12:55.224Z">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/init.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexog.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexos.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/local4000%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E7%AB%AF%E5%8F%A3.PNG">
+<meta property="og:updated_time" content="2017-06-11T13:36:45.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
-<meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
 <meta name="twitter:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG">
 
 
@@ -362,8 +367,7 @@
 
       
         <p>这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！</p>
-<p> 一、准备软件工具</p>
-<blockquote>
+<h1 id="准备软件工具"><a href="#准备软件工具" class="headerlink" title="准备软件工具"></a>准备软件工具</h1><blockquote>
 <ul>
 <li>git客户端<br><br>   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令）</li>
 <li>node.js<br><a id="more"></a>
@@ -371,13 +375,13 @@
 <li>GitHub账号<br><br>  使用github Pages来托管GitHub上的静态网页，用它来搭建博客</li>
 </ul>
 </blockquote>
-<p> 二、软件安装和配置<br>本文是在win10系统下安装的<br>下面介绍详细的安装过程：</p>
+<h1 id="软件安装和配置"><a href="#软件安装和配置" class="headerlink" title="软件安装和配置"></a>软件安装和配置</h1><p>本文是在win10系统下安装的<br>下面介绍详细的安装过程：</p>
 <p> &emsp;建议先安装git。因为用node.js安装hexo的时候，可以用git。</p>
-<h4 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h4><p>&emsp;&emsp;安装git for windows。<br><br>&emsp;&emsp;安装好了之后，直接在电脑中任意一个文件夹下，右键，就可以看到如下选项：</p>
+<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><p>&emsp;&emsp;安装git for windows。<br><br>&emsp;&emsp;安装好了之后，直接在电脑中任意一个文件夹下，右键，就可以看到如下选项：</p>
 <p><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG" alt="git"><br><br>    然后，选择Git Bash Here就可以在当前路径中打开git的命令行界面了。</p>
-<h4 id="GitHub账号注册"><a href="#GitHub账号注册" class="headerlink" title="GitHub账号注册"></a>GitHub账号注册</h4><p>  &emsp;&emsp;进去GitHub的官网进行注册，<a href="http://www.github.com/" target="_blank" rel="external">github传送门</a>。<br><br>  &emsp;&emsp;注册过程比较简单，当然，必须记住你的邮箱和密码。注册过的童鞋请跳过，我之前就注册过了，这一步就跳过了。</p>
-<h4 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h4><p>&emsp;&emsp;注册号账号以后，就是创建仓库了，用来放置你的代码文件。进入GitHub后，点击左上角的“+”号，如下：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG" alt="git"><br><br>   进入到创建仓库页面，创建仓库时，只需要填写仓库名字，其他的不用管，然后点击“Create repository”即可，这里注意，仓库名一定要是yourname.github.io,比如我的GitHub昵称为sylviaxgj，则我的仓库名字就是sylviaxgj.github.io。（我之前已经创建过了，所以会有已存在警告，创建的时候是不会有的）<br>    <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg" alt="git"><br></p>
-<h4 id="配置SSH-Keys"><a href="#配置SSH-Keys" class="headerlink" title="配置SSH Keys"></a>配置SSH Keys</h4><h5 id="检查SSH-Keys"><a href="#检查SSH-Keys" class="headerlink" title="检查SSH Keys"></a>检查SSH Keys</h5><p>&emsp;&emsp;这一步的目的是使本地git项目与远程的GitHub建立联系，使本地git提交时，拥有远程GitHub的权限，来提交到你的GitHub上。<br><br>&emsp;&emsp;首先,来检查一下，你的电脑上的ssh key打：</p>
+<h2 id="GitHub设置"><a href="#GitHub设置" class="headerlink" title="GitHub设置"></a>GitHub设置</h2><h3 id="GitHub账号注册"><a href="#GitHub账号注册" class="headerlink" title="GitHub账号注册"></a>GitHub账号注册</h3><p>  &emsp;&emsp;进去GitHub的官网进行注册，<a href="http://www.github.com/" target="_blank" rel="external">github传送门</a>。<br><br>  &emsp;&emsp;注册过程比较简单，当然，必须记住你的邮箱和密码。注册过的童鞋请跳过，我之前就注册过了，这一步就跳过了。</p>
+<h3 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h3><p>&emsp;&emsp;注册号账号以后，就是创建仓库了，用来放置你的代码文件。进入GitHub后，点击左上角的“+”号，如下：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG" alt="git"><br><br>   进入到创建仓库页面，创建仓库时，只需要填写仓库名字，其他的不用管，然后点击“Create repository”即可，这里注意，仓库名一定要是yourname.github.io,比如我的GitHub昵称为sylviaxgj，则我的仓库名字就是sylviaxgj.github.io。（我之前已经创建过了，所以会有已存在警告，创建的时候是不会有的）<br>    <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg" alt="git"><br></p>
+<h3 id="配置SSH-Keys"><a href="#配置SSH-Keys" class="headerlink" title="配置SSH Keys"></a>配置SSH Keys</h3><h4 id="检查SSH-Keys"><a href="#检查SSH-Keys" class="headerlink" title="检查SSH Keys"></a>检查SSH Keys</h4><p>&emsp;&emsp;这一步的目的是使本地git项目与远程的GitHub建立联系，使本地git提交时，拥有远程GitHub的权限，来提交到你的GitHub上。<br><br>&emsp;&emsp;首先,来检查一下，你的电脑上的ssh key打：</p>
 <blockquote>
 <p>在电脑任意文件夹处，右键git bash here，<br><br>然后在命令行输入cd ~/.ssh  <br>来检查本机的ssh密钥<br></p>
 </blockquote>
@@ -386,9 +390,28 @@
 <p>pwd <br><br>来显示当前的路径</p>
 </blockquote>
 <p>找到当前路径后，打开路径，会发现有三个文件，分别是id_rsa、id_rsa.pub、known_hosts。其中id_rsa是私钥，id_rsa.pub是公钥。可以直接删除.ssh文件夹中的所有文件，重新配置。也可以使用其中的文件。</p>
-<h5 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h5><p>&emsp;&emsp;打开git，在命令行下，输入下列命令：<br><code>ssh-keygen -t rsa -C &quot;你GitHub的注册邮箱l@example.com&quot;</code>，<br>注意：“C”为大写。<br><br>&emsp;&emsp;然后，回车后，会让你输入密码，这个密码是在你每次提交项目时输入，这样可以防止别人往你的项目里提交内容。如何密码为空的话，提交项目时，不用输入密码。若是不需要密码，可以直接三次回车。<br><br>&emsp;&emsp;可以输入下列命令来验证是否连接成功，<code>ssh -T git@github.com</code>（注意，这里就输入该命令，不用更改成自己的账户），如果显示<code>Hi xxx! You&#39;ve successfully authenticated,but GitHub does not provide shell access.</code>，则表示连接成功，此时，已经生成新的SSH Key了，接下来，就是向GitHub中添加SSH Key了。</p>
-<h5 id="向GitHub中添加SSH-Key"><a href="#向GitHub中添加SSH-Key" class="headerlink" title="向GitHub中添加SSH Key"></a>向GitHub中添加SSH Key</h5><p>&emsp;&emsp;在本地设置了SSH Key，就可以添加到GitHub上了。<br><br>&emsp;&emsp;打开GitHub登录你的账户，然后点击右上角的头像，选择Settings,在显示页面的左边选择“SSH and GPG keys”，然后右上角点击“New SSH key”来创建一个SSH key。<br><br>&emsp;&emsp;填写SSH key时，只用填写“Title”和“Key”两项。“Title”可以随便起名字，但是建议最好选一个反映本机相关信息的名字，表示这个SSH key是和本机相连。“Key”中填入上一步生成的id_rsa.pub中的内容，id_rsa.pub的路径一般是在C:\Users\你的电脑名.ssh文件夹下（我的是在C:\Users\xgj.ssh）。最后，点击“Add SSH key”按钮即可。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg" alt="">;</p>
-
+<h4 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h4><p>&emsp;&emsp;打开git，在命令行下，输入下列命令：<br><code>ssh-keygen -t rsa -C &quot;你GitHub的注册邮箱l@example.com&quot;</code>，<br>注意：“C”为大写。<br><br>&emsp;&emsp;然后，回车后，会让你输入密码，这个密码是在你每次提交项目时输入，这样可以防止别人往你的项目里提交内容。如何密码为空的话，提交项目时，不用输入密码。若是不需要密码，可以直接三次回车。<br><br>&emsp;&emsp;此时，已经生成新的SSH Key了，接下来，就是向GitHub中添加SSH Key了。</p>
+<h4 id="向GitHub中添加SSH-Key"><a href="#向GitHub中添加SSH-Key" class="headerlink" title="向GitHub中添加SSH Key"></a>向GitHub中添加SSH Key</h4><p>&emsp;&emsp;在本地设置了SSH Key，就可以添加到GitHub上了。<br><br>&emsp;&emsp;打开GitHub登录你的账户，然后点击右上角的头像，选择Settings,在显示页面的左边选择“SSH and GPG keys”，然后右上角点击“New SSH key”来创建一个SSH key。<br><br>&emsp;&emsp;填写SSH key时，只用填写“Title”和“Key”两项。“Title”可以随便起名字，但是建议最好选一个反映本机相关信息的名字，表示这个SSH key是和本机相连。“Key”中填入上一步生成的id_rsa.pub中的内容，id_rsa.pub的路径一般是在C:\Users\你的电脑名.ssh文件夹下（我的是在C:\Users\xgj.ssh）。最后，点击“Add SSH key”按钮即可。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg" alt="">;</p>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>&emsp;&emsp;测试设置是否成功，可以输入<code>ssh -T git@github.com</code>，<br>来验证是否连接成功，（注意，这里就输入该命令，不用更改成自己的账户），如果出现警告，直接输入“yes”就好。<br><br>&emsp;&emsp;如果显示<code>Hi xxx! You&#39;ve successfully authenticated,but GitHub does not provide shell access.</code>，则表示连接成功。</p>
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><h3 id="Hexo介绍"><a href="#Hexo介绍" class="headerlink" title="Hexo介绍"></a>Hexo介绍</h3><p>&emsp;&emsp; Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上，引用Hexo作者 @tommy351 的话：</p>
+<blockquote>
+<p>快速、简单且功能强大的 Node.js 博客框架。A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<p>&emsp;&emsp;由于github pages存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的就是将这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。</p>
+<h3 id="Hexo安装-1"><a href="#Hexo安装-1" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><p>&emsp;&emsp;注意：安装Hexo过程中最好都用git来安装。<br>&emsp;&emsp;先将之前安装的node.js安装好，然后在任意位置打开git，命令行中输入以下命令：</p>
+<blockquote>
+<p>npm install -g hexo</p>
+</blockquote>
+<p>&emsp;&emsp;这个过程可能有点久，稍等一会。<br></p>
+<h3 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h3><p>&emsp;&emsp;在电脑中创建一个文件夹，这个文件夹将会保存我们以后写的blog的内容。这里我建立了一个hexo博客的文件夹。然后在此文件夹中，打开git，执行下列命令：</p>
+<blockquote>
+<p>hexo init<br></p>
+</blockquote>
+<p><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/init.JPG" alt=""><br>&emsp;&emsp;当看到“INFO Start blogging with Hexo!”，则表示初始化成功。<br><br>&emsp;&emsp;然后，Hexo就会在你这个文件夹中创建网站所需的所有文件。</p>
+<h3 id="Hexo生成静态文件"><a href="#Hexo生成静态文件" class="headerlink" title="Hexo生成静态文件"></a>Hexo生成静态文件</h3><p>&emsp;&emsp;执行下列命令，来生成静态文件，出现下列结果表示执行成功。然后会在你的Hexo目录下（我的是hexo博客）下，生成一个public文件夹，里面就是生成的网页相关文件，将来就是把这个文件夹里的内容push到GitHub上去的。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexog.JPG" alt=""></p>
+<h3 id="进行本地预览"><a href="#进行本地预览" class="headerlink" title="进行本地预览"></a>进行本地预览</h3><p>&emsp;&emsp;<img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexos.JPG" alt=""><br>&emsp;&emsp;执行hexo s 开启本地预览，当出现上述结果，就可以进行本地预览了。按下组合键<code>Ctrl+C</code>可以关闭预览<br><br>&emsp;&emsp;在浏览器中， 打开的上述显示的网址（<a href="http://localhost:4000/）" target="_blank" rel="external">http://localhost:4000/）</a> 来进行本地预览。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/local4000%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br>当出现上述结果时，表示hexo安装成功，第一次使用hexo时，生成的是一篇hello world文章，采用默认主题landscape（我这里是改过的）。</p>
+<h3 id="端口占用情况解决"><a href="#端口占用情况解决" class="headerlink" title="端口占用情况解决"></a>端口占用情况解决</h3><p>&emsp;&emsp;当使用hexo s来开启本地预览的时候，并不是一直都这么顺利，有时候会出现端口占用情况，此时，命令行会显示出<code>FATAL Port 4000 has been used.Try other port instead</code> 。<br>&emsp;&emsp;此时，可以打开Windows的cmd，输入<code>netstat -aon|findstr &quot;4000&quot;</code>，得到如下结果<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E7%AB%AF%E5%8F%A3.PNG" alt=""><br>&emsp;&emsp;在上图中最后一列可以看到一个PID（这里是10928），表示当前占用4000端口的进程的PID。<br><br>&emsp;&emsp;然后打开Windows的任务管理器，在详细信息选项页面，找到对应的PID，并将其停止。重新执行<code>hexo s</code>即可。<br><br>&emsp;&emsp;至此，Hexo的安装就完成了，下面介绍Hexo的使用和一些配置。</p>
+<h1 id="使用Hexo"><a href="#使用Hexo" class="headerlink" title="使用Hexo"></a>使用Hexo</h1>
       
     </div>
 
@@ -554,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#git安装"><span class="nav-number">1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GitHub账号注册"><span class="nav-number">2.</span> <span class="nav-text">GitHub账号注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">4.</span> <span class="nav-text">配置SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#检查SSH-Keys"><span class="nav-number">4.1.</span> <span class="nav-text">检查SSH Keys</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成新的SSH-Key"><span class="nav-number">4.2.</span> <span class="nav-text">生成新的SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#向GitHub中添加SSH-Key"><span class="nav-number">4.3.</span> <span class="nav-text">向GitHub中添加SSH Key</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备软件工具"><span class="nav-number">1.</span> <span class="nav-text">准备软件工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件安装和配置"><span class="nav-number">2.</span> <span class="nav-text">软件安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">2.1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub设置"><span class="nav-number">2.2.</span> <span class="nav-text">GitHub设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub账号注册"><span class="nav-number">2.2.1.</span> <span class="nav-text">GitHub账号注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">2.2.2.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">2.2.3.</span> <span class="nav-text">配置SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#检查SSH-Keys"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">检查SSH Keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成新的SSH-Key"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">生成新的SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#向GitHub中添加SSH-Key"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">向GitHub中添加SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">2.2.3.4.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo安装"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">2.3.1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo安装-1"><span class="nav-number">2.3.2.</span> <span class="nav-text">Hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo初始化"><span class="nav-number">2.3.3.</span> <span class="nav-text">Hexo初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo生成静态文件"><span class="nav-number">2.3.4.</span> <span class="nav-text">Hexo生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进行本地预览"><span class="nav-number">2.3.5.</span> <span class="nav-text">进行本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口占用情况解决"><span class="nav-number">2.3.6.</span> <span class="nav-text">端口占用情况解决</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Hexo"><span class="nav-number">3.</span> <span class="nav-text">使用Hexo</span></a></li></ol></div>
             
 
           </div>
