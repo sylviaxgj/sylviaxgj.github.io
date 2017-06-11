@@ -326,6 +326,17 @@
 
           
           
+             <span id="/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/" class="leancloud_visitors" data-flag-title="GitHub-Hexo搭建个人独立博客血泪过程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -344,8 +355,7 @@
 
       
         
-          
-            <p>这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！</p>
+          <p>这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！</p>
 <h3 id="一、准备软件工具"><a href="#一、准备软件工具" class="headerlink" title="一、准备软件工具"></a>一、准备软件工具</h3><blockquote>
 <ul>
 <li>git客户端<br><br>   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令）</li>
@@ -353,14 +363,13 @@
 <li>GitHub账号<br><br>  使用github Pages来托管GitHub上的静态网页，用它来搭建博客</li>
 </ul>
 </blockquote>
-<h3 id="二、软件安装和配置"><a href="#二、软件安装和配置" class="headerlink" title="二、软件安装和配置"></a>二、软件安装和配置</h3><p>本文是在win10系统下安装的<br>下面介绍详细的安装过程：</p>
-<p> &emsp;建议先安装git。因为用node.js安装hexo的时候，可以用git。</p>
-<h4 id="2-1-git安装"><a href="#2-1-git安装" class="headerlink" title="2.1 git安装"></a>2.1 git安装</h4><pre><code>安装git for windows。
-安装好了之后，直接在电脑中任意一个文件夹下，右键，就可以看到如下选项：
-</code></pre><p><img src="http://ordb2n1wt.bkt.clouddn.com/git/gitBash0.JPG" alt="git"><br><br>    然后，选择Git Bash Here就可以在当前路径中打开git的命令行界面了。</p>
-<h4 id="2-2-GitHub账号注册"><a href="#2-2-GitHub账号注册" class="headerlink" title="2.2 GitHub账号注册"></a>2.2 GitHub账号注册</h4><p>  进去GitHub的官网进行注册，<a href="http://www.github.com/" target="_blank" rel="external">github传送门</a>。<br><br>  注册过程比较简单，当然，必须记住你的邮箱和密码。注册过的童鞋请跳过，我之前就注册过了，这一步就跳过了。</p>
-<h4 id="2-3-创建GitHub仓库"><a href="#2-3-创建GitHub仓库" class="headerlink" title="2.3 创建GitHub仓库"></a>2.3 创建GitHub仓库</h4>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -450,6 +459,17 @@
           
 
           
+          
+             <span id="/hexo/2017/06/10/markdown-语法记录/" class="leancloud_visitors" data-flag-title="markdown 语法记录">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -759,6 +779,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("vOUl6Yol1opzIkMLlsGg3VTg-gzGzoHsz", "HqkXX11a9DBwgXq6g9RuhA8g");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
