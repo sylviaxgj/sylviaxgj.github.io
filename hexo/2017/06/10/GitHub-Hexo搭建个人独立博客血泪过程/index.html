@@ -93,18 +93,21 @@
 
 
 
-<meta name="description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 一、准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta name="description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta property="og:url" content="https://sylviaxgj.git@github.io/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/index.html">
 <meta property="og:site_name" content="Sylvia&#39; Blog">
-<meta property="og:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 一、准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
-<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/git/gitBash0.JPG">
-<meta property="og:updated_time" content="2017-06-11T08:09:13.214Z">
+<meta property="og:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg">
+<meta property="og:updated_time" content="2017-06-11T11:12:55.224Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
-<meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 一、准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
-<meta name="twitter:image" content="http://ordb2n1wt.bkt.clouddn.com/git/gitBash0.JPG">
+<meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！  一、准备软件工具   git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta name="twitter:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG">
 
 
 
@@ -359,7 +362,8 @@
 
       
         <p>这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！</p>
-<h3 id="一、准备软件工具"><a href="#一、准备软件工具" class="headerlink" title="一、准备软件工具"></a>一、准备软件工具</h3><blockquote>
+<p> 一、准备软件工具</p>
+<blockquote>
 <ul>
 <li>git客户端<br><br>   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令）</li>
 <li>node.js<br><a id="more"></a>
@@ -367,13 +371,24 @@
 <li>GitHub账号<br><br>  使用github Pages来托管GitHub上的静态网页，用它来搭建博客</li>
 </ul>
 </blockquote>
-<h3 id="二、软件安装和配置"><a href="#二、软件安装和配置" class="headerlink" title="二、软件安装和配置"></a>二、软件安装和配置</h3><p>本文是在win10系统下安装的<br>下面介绍详细的安装过程：</p>
+<p> 二、软件安装和配置<br>本文是在win10系统下安装的<br>下面介绍详细的安装过程：</p>
 <p> &emsp;建议先安装git。因为用node.js安装hexo的时候，可以用git。</p>
-<h4 id="2-1-git安装"><a href="#2-1-git安装" class="headerlink" title="2.1 git安装"></a>2.1 git安装</h4><pre><code>安装git for windows。
-安装好了之后，直接在电脑中任意一个文件夹下，右键，就可以看到如下选项：
-</code></pre><p><img src="http://ordb2n1wt.bkt.clouddn.com/git/gitBash0.JPG" alt="git"><br><br>    然后，选择Git Bash Here就可以在当前路径中打开git的命令行界面了。</p>
-<h4 id="2-2-GitHub账号注册"><a href="#2-2-GitHub账号注册" class="headerlink" title="2.2 GitHub账号注册"></a>2.2 GitHub账号注册</h4><p>  进去GitHub的官网进行注册，<a href="http://www.github.com/" target="_blank" rel="external">github传送门</a>。<br><br>  注册过程比较简单，当然，必须记住你的邮箱和密码。注册过的童鞋请跳过，我之前就注册过了，这一步就跳过了。</p>
-<h4 id="2-3-创建GitHub仓库"><a href="#2-3-创建GitHub仓库" class="headerlink" title="2.3 创建GitHub仓库"></a>2.3 创建GitHub仓库</h4>
+<h4 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h4><p>&emsp;&emsp;安装git for windows。<br><br>&emsp;&emsp;安装好了之后，直接在电脑中任意一个文件夹下，右键，就可以看到如下选项：</p>
+<p><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG" alt="git"><br><br>    然后，选择Git Bash Here就可以在当前路径中打开git的命令行界面了。</p>
+<h4 id="GitHub账号注册"><a href="#GitHub账号注册" class="headerlink" title="GitHub账号注册"></a>GitHub账号注册</h4><p>  &emsp;&emsp;进去GitHub的官网进行注册，<a href="http://www.github.com/" target="_blank" rel="external">github传送门</a>。<br><br>  &emsp;&emsp;注册过程比较简单，当然，必须记住你的邮箱和密码。注册过的童鞋请跳过，我之前就注册过了，这一步就跳过了。</p>
+<h4 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h4><p>&emsp;&emsp;注册号账号以后，就是创建仓库了，用来放置你的代码文件。进入GitHub后，点击左上角的“+”号，如下：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG" alt="git"><br><br>   进入到创建仓库页面，创建仓库时，只需要填写仓库名字，其他的不用管，然后点击“Create repository”即可，这里注意，仓库名一定要是yourname.github.io,比如我的GitHub昵称为sylviaxgj，则我的仓库名字就是sylviaxgj.github.io。（我之前已经创建过了，所以会有已存在警告，创建的时候是不会有的）<br>    <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg" alt="git"><br></p>
+<h4 id="配置SSH-Keys"><a href="#配置SSH-Keys" class="headerlink" title="配置SSH Keys"></a>配置SSH Keys</h4><h5 id="检查SSH-Keys"><a href="#检查SSH-Keys" class="headerlink" title="检查SSH Keys"></a>检查SSH Keys</h5><p>&emsp;&emsp;这一步的目的是使本地git项目与远程的GitHub建立联系，使本地git提交时，拥有远程GitHub的权限，来提交到你的GitHub上。<br><br>&emsp;&emsp;首先,来检查一下，你的电脑上的ssh key打：</p>
+<blockquote>
+<p>在电脑任意文件夹处，右键git bash here，<br><br>然后在命令行输入cd ~/.ssh  <br>来检查本机的ssh密钥<br></p>
+</blockquote>
+<p>&emsp;&emsp;如果提示:No such file or directory ，说明是第一次使用git。否则，会进入到.ssh文件夹，这个时候，你可以输入</p>
+<blockquote>
+<p>pwd <br><br>来显示当前的路径</p>
+</blockquote>
+<p>找到当前路径后，打开路径，会发现有三个文件，分别是id_rsa、id_rsa.pub、known_hosts。其中id_rsa是私钥，id_rsa.pub是公钥。可以直接删除.ssh文件夹中的所有文件，重新配置。也可以使用其中的文件。</p>
+<h5 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h5><p>&emsp;&emsp;打开git，在命令行下，输入下列命令：<br><code>ssh-keygen -t rsa -C &quot;你GitHub的注册邮箱l@example.com&quot;</code>，<br>注意：“C”为大写。<br><br>&emsp;&emsp;然后，回车后，会让你输入密码，这个密码是在你每次提交项目时输入，这样可以防止别人往你的项目里提交内容。如何密码为空的话，提交项目时，不用输入密码。若是不需要密码，可以直接三次回车。<br><br>&emsp;&emsp;可以输入下列命令来验证是否连接成功，<code>ssh -T git@github.com</code>（注意，这里就输入该命令，不用更改成自己的账户），如果显示<code>Hi xxx! You&#39;ve successfully authenticated,but GitHub does not provide shell access.</code>，则表示连接成功，此时，已经生成新的SSH Key了，接下来，就是向GitHub中添加SSH Key了。</p>
+<h5 id="向GitHub中添加SSH-Key"><a href="#向GitHub中添加SSH-Key" class="headerlink" title="向GitHub中添加SSH Key"></a>向GitHub中添加SSH Key</h5><p>&emsp;&emsp;在本地设置了SSH Key，就可以添加到GitHub上了。<br><br>&emsp;&emsp;打开GitHub登录你的账户，然后点击右上角的头像，选择Settings,在显示页面的左边选择“SSH and GPG keys”，然后右上角点击“New SSH key”来创建一个SSH key。<br><br>&emsp;&emsp;填写SSH key时，只用填写“Title”和“Key”两项。“Title”可以随便起名字，但是建议最好选一个反映本机相关信息的名字，表示这个SSH key是和本机相连。“Key”中填入上一步生成的id_rsa.pub中的内容，id_rsa.pub的路径一般是在C:\Users\你的电脑名.ssh文件夹下（我的是在C:\Users\xgj.ssh）。最后，点击“Add SSH key”按钮即可。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg" alt="">;</p>
+
       
     </div>
 
@@ -539,7 +554,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、准备软件工具"><span class="nav-number">1.</span> <span class="nav-text">一、准备软件工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、软件安装和配置"><span class="nav-number">2.</span> <span class="nav-text">二、软件安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-git安装"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 git安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-GitHub账号注册"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 GitHub账号注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-创建GitHub仓库"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 创建GitHub仓库</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#git安装"><span class="nav-number">1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GitHub账号注册"><span class="nav-number">2.</span> <span class="nav-text">GitHub账号注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">4.</span> <span class="nav-text">配置SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#检查SSH-Keys"><span class="nav-number">4.1.</span> <span class="nav-text">检查SSH Keys</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成新的SSH-Key"><span class="nav-number">4.2.</span> <span class="nav-text">生成新的SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#向GitHub中添加SSH-Key"><span class="nav-number">4.3.</span> <span class="nav-text">向GitHub中添加SSH Key</span></a></li></ol></li></ol></div>
             
 
           </div>
