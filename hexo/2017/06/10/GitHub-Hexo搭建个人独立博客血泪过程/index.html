@@ -102,7 +102,7 @@
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/gitBash0.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%93.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/new%E4%BB%93%E5%BA%932%20.jpg">
-<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH%EF%BC%88%E7%94%A8%EF%BC%89.jpg">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/init.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexog.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexos.JPG">
@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexod0%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
-<meta property="og:updated_time" content="2017-06-11T14:58:09.941Z">
+<meta property="og:updated_time" content="2017-06-11T15:14:19.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
@@ -395,7 +395,7 @@
 </blockquote>
 <p>找到当前路径后，打开路径，会发现有三个文件，分别是id_rsa、id_rsa.pub、known_hosts。其中id_rsa是私钥，id_rsa.pub是公钥。可以直接删除.ssh文件夹中的所有文件，重新配置。也可以使用其中的文件。</p>
 <h4 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h4><p>&emsp;&emsp;打开git，在命令行下，输入下列命令：<br><code>ssh-keygen -t rsa -C &quot;你GitHub的注册邮箱l@example.com&quot;</code>，<br>注意：“C”为大写。<br><br>&emsp;&emsp;然后，回车后，会让你输入密码，这个密码是在你每次提交项目时输入，这样可以防止别人往你的项目里提交内容。如何密码为空的话，提交项目时，不用输入密码。若是不需要密码，可以直接三次回车。<br><br>&emsp;&emsp;此时，已经生成新的SSH Key了，接下来，就是向GitHub中添加SSH Key了。</p>
-<h4 id="向GitHub中添加SSH-Key"><a href="#向GitHub中添加SSH-Key" class="headerlink" title="向GitHub中添加SSH Key"></a>向GitHub中添加SSH Key</h4><p>&emsp;&emsp;在本地设置了SSH Key，就可以添加到GitHub上了。<br><br>&emsp;&emsp;打开GitHub登录你的账户，然后点击右上角的头像，选择Settings,在显示页面的左边选择“SSH and GPG keys”，然后右上角点击“New SSH key”来创建一个SSH key。<br><br>&emsp;&emsp;填写SSH key时，只用填写“Title”和“Key”两项。“Title”可以随便起名字，但是建议最好选一个反映本机相关信息的名字，表示这个SSH key是和本机相连。“Key”中填入上一步生成的id_rsa.pub中的内容，id_rsa.pub的路径一般是在C:\Users\你的电脑名.ssh文件夹下（我的是在C:\Users\xgj.ssh）。最后，点击“Add SSH key”按钮即可。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH.jpg" alt="">;</p>
+<h4 id="向GitHub中添加SSH-Key"><a href="#向GitHub中添加SSH-Key" class="headerlink" title="向GitHub中添加SSH Key"></a>向GitHub中添加SSH Key</h4><p>&emsp;&emsp;在本地设置了SSH Key，就可以添加到GitHub上了。<br><br>&emsp;&emsp;打开GitHub登录你的账户，然后点击右上角的头像，选择Settings,在显示页面的左边选择“SSH and GPG keys”，然后右上角点击“New SSH key”来创建一个SSH key。<br><br>&emsp;&emsp;填写SSH key时，只用填写“Title”和“Key”两项。“Title”可以随便起名字，但是建议最好选一个反映本机相关信息的名字，表示这个SSH key是和本机相连。“Key”中填入上一步生成的id_rsa.pub中的内容，id_rsa.pub的路径一般是在C:\Users\你的电脑名.ssh文件夹下（我的是在C:\Users\xgj.ssh）。最后，点击“Add SSH key”按钮即可。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/git/newSSH%EF%BC%88%E7%94%A8%EF%BC%89.jpg" alt="">;</p>
 <h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>&emsp;&emsp;测试设置是否成功，可以输入<code>ssh -T git@github.com</code>，<br>来验证是否连接成功，（注意，这里就输入该命令，不用更改成自己的账户），如果出现警告，直接输入“yes”就好。<br><br>&emsp;&emsp;如果显示<code>Hi xxx! You&#39;ve successfully authenticated,but GitHub does not provide shell access.</code>，则表示连接成功。</p>
 <h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><h3 id="Hexo介绍"><a href="#Hexo介绍" class="headerlink" title="Hexo介绍"></a>Hexo介绍</h3><p>&emsp;&emsp; Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上，引用Hexo作者 @tommy351 的话：</p>
 <blockquote>
@@ -427,7 +427,7 @@
 <li>不要使用记事本打开站点配置文件，因为记事本不是使用utf-8来保存的，会造成中文乱码，若是已经使用记事本打开了，可以使用notepad++来更改其编码格式。</li>
 <li>注意在每个字段的冒号后面填写内容时，要留一格空格，然后再填写内容，否则会造成错误。<br></li>
 </ol>
-<p>&emsp;&emsp;修改完配置文件以后，执行<code>hexo d</code>,发现报错：<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexod0%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;于是，就先安装hexo-deployer-git这个插件：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;安装了重新执行<code>hexo d</code>，执行成功以后。打开你的<a href="https://你的GitHub名字.github.io/，出现和本地预览时一样的页面，则本地微博已经部署到GitHub上了。" target="_blank" rel="external">https://你的GitHub名字.github.io/，出现和本地预览时一样的页面，则本地微博已经部署到GitHub上了。</a> </p>
+<p>&emsp;&emsp;修改完配置文件以后，执行<code>hexo d</code>,发现报错：<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexod0%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;于是，就先安装hexo-deployer-git这个插件：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;安装了重新执行<code>hexo d</code>，执行成功以后。打开你的<a href="https://你的GitHub名字.github.io/" target="_blank" rel="external">https://你的GitHub名字.github.io/</a> ，出现和本地预览时一样的页面，则本地博客已经部署到GitHub上了。</p>
 <h2 id="新建文章和网页"><a href="#新建文章和网页" class="headerlink" title="新建文章和网页"></a>新建文章和网页</h2><h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2>
       
     </div>
