@@ -112,7 +112,9 @@
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexod0%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
-<meta property="og:updated_time" content="2017-06-11T15:14:19.083Z">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/theme%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/next%E4%B8%BB%E9%A2%98.JPG">
+<meta property="og:updated_time" content="2017-06-12T03:10:10.793Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
@@ -422,13 +424,100 @@
 <h3 id="source文件"><a href="#source文件" class="headerlink" title="source文件"></a><code>source</code>文件</h3><p>&emsp;&emsp; 当用户新建了网页或者文章时，在source文件下，就会生成相应的内容。新网页直接放在source文件夹下，文章放在source文件夹下的_posts文件夹下。相当于草稿，你可以在本地修改。当执行hexo g，就会将其中的内容生成为静态网页，并放入public文件夹下。</p>
 <h3 id="public-文件"><a href="#public-文件" class="headerlink" title="public 文件"></a><code>public</code> 文件</h3><p>&emsp;&emsp; 存放着生成的HTML文件内容，最终会被push到GitHub上。</p>
 <h3 id="themes文件"><a href="#themes文件" class="headerlink" title="themes文件"></a><code>themes</code>文件</h3><p>&emsp;&emsp; 下载的Hexo博客的主题文件，要放在该目录下，每个主题都有自己的_config.yml文件。</p>
-<h2 id="部署本地博客到GitHub上"><a href="#部署本地博客到GitHub上" class="headerlink" title="部署本地博客到GitHub上"></a>部署本地博客到GitHub上</h2><p>&emsp;&emsp;打开根目录下的站点配置文件，在文档的最下方添加如下配置：<img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d.JPG" alt=""><br>&emsp;&emsp;这里有两点注意的地方：</p>
+<h2 id="部署本地博客到GitHub上"><a href="#部署本地博客到GitHub上" class="headerlink" title="部署本地博客到GitHub上"></a>部署本地博客到GitHub上</h2><p>&emsp;&emsp;打开根目录下的站点配置文件，在文档的最下方添加如下配置：<img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d.JPG" alt=""><br>  &emsp;&emsp;仓库就填写刚新建的<code>你的GitHub名.github.io</code>那个仓库，打开你的仓库，点击页面中右边的“clone or download”绿色按钮，然后点击链接右边的小图标就复制到剪切板了，使用HTTPS或者SSH都可以。或者，你也可以直接把我的名字换成你的（我的名字是sylviaxgj）。<br><br>&emsp;&emsp;分支名就填写，你要提交到的分支名称，这里我使用develop分支，是为了防止错误的文件直接提交到master分支上，master分支应该时刻都保持一种正确的版本或者页面。所以，我的改动先提交到develop上，确认无误以后，再合并到master分支。所以，博客每次更新部署到GitHub上之后，要再手工将develop分支合并到master分支。</p>
+<p>&emsp;&emsp;这里有两点注意的地方：</p>
 <ol>
 <li>不要使用记事本打开站点配置文件，因为记事本不是使用utf-8来保存的，会造成中文乱码，若是已经使用记事本打开了，可以使用notepad++来更改其编码格式。</li>
 <li>注意在每个字段的冒号后面填写内容时，要留一格空格，然后再填写内容，否则会造成错误。<br></li>
 </ol>
 <p>&emsp;&emsp;修改完配置文件以后，执行<code>hexo d</code>,发现报错：<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/hexod0%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;于是，就先安装hexo-deployer-git这个插件：<br>  <img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>  &emsp;&emsp;安装了重新执行<code>hexo d</code>，执行成功以后。打开你的<a href="https://你的GitHub名字.github.io/" target="_blank" rel="external">https://你的GitHub名字.github.io/</a> ，出现和本地预览时一样的页面，则本地博客已经部署到GitHub上了。</p>
-<h2 id="新建文章和网页"><a href="#新建文章和网页" class="headerlink" title="新建文章和网页"></a>新建文章和网页</h2><h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2>
+<h2 id="新建文章和网页"><a href="#新建文章和网页" class="headerlink" title="新建文章和网页"></a>新建文章和网页</h2><p>&emsp;&emsp;用hexo发表新文章,在<strong>hexo根目录</strong>上，直接打开git，输入下列命令</p>
+<blockquote>
+<p>hexo n “ 新文章的名字”</p>
+</blockquote>
+<p>在hexo根目录\source_posts文件夹中，就会生成相应的md文件，然后，用支持markdown的编辑器打开，直接编辑就好(使用markdown语法)。我这里用的Atom。文章写完后：</p>
+<ol>
+<li>用<code>hexo g</code>生成静态文件；</li>
+<li>用<code>hexo s</code>进行本地预览和调试；</li>
+<li>用<code>hexo d</code>将在public文件中生成的文件，push到GitHub上去。<br><br>注意：这三个命令，都在hexo根目录下执行即可。<hr></li>
+</ol>
+<p>&emsp;&emsp;用hexo生成新的页面</p>
+<blockquote>
+<p>hexo new page “新页面的名字”</p>
+</blockquote>
+<p>&emsp;&emsp;然后在hexo根目录\source文件夹下，就会生成新页面的文件夹，里面默认带有一个index文件。部署以后，在public文件夹中生成新页面的文件夹，通过<code>https://你的GitHub名.github.io/新页面名</code>来访问页面。</p>
+<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><p>&emsp;&emsp;掌握了基本的Hexo操作后，我们来看如何更换主题。<a href="https://hexo.io/themes/" target="_blank" rel="external">官方主题传送</a>。打开官网主题地址后，可以看到很多主题，点击图片进行主题预览，点击图片下主题的名字，进入到主题作者的GitHub上，里面会有详细的安装教程。每个主题的安装都不太一样，需要自己仔细研读安装过程。这里，我安装的是next主题，简单介绍一下。<br><br>&emsp;&emsp;<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">next主题的使用文档</a>中，包含了详细的介绍，可以参考next文档。</p>
+<ol>
+<li>首先,从GitHub下载主题，在<strong>hexo根目录</strong>下打开git，执行下列命令  <br><blockquote>
+<p><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br><br>表示将next主题文件从GitHub上下载到当前目录下的source/next文件下(若没有next文件夹，则自动新建)<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/theme%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""></p>
+</blockquote>
+</li>
+<li><p>修改<strong>站点配置文件</strong>，来启用主题。在站点配置文件中，找到theme字段，并将其值改为next。</p>
+<blockquote>
+<p>theme: next<br><br>注意:冒号之后，一定要空一格，然后再输入值。</p>
+</blockquote>
+</li>
+<li><p>至此，主题已经启用，下面我们来验证一下，并把它部署到GitHub上。</p>
+<ul>
+<li>首先，执行<code>hexo clean</code> 来清除Hexo的缓存；</li>
+<li>然后，生成静态文件， 执行<code>hexo g</code>；</li>
+<li>然后，进行本地预览， 执行 <code>hexo s</code>，打开显示的网址<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，若是出现下图，则表示主题安装成功；<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/next%E4%B8%BB%E9%A2%98.JPG" alt=""></li>
+</ul>
+</li>
+<li>最后部署到GitHub上，直接输入<code>hexo d</code>即可。打开 <a href="https://你的GitHub名.github.io" target="_blank" rel="external">https://你的GitHub名.github.io</a> 来进行访问。</li>
+</ol>
+<h2 id="常用Hexo命令总结"><a href="#常用Hexo命令总结" class="headerlink" title="常用Hexo命令总结"></a>常用Hexo命令总结</h2><table>
+<thead>
+<tr>
+<th>短命令</th>
+<th>长命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hexo g</td>
+<td>hexo generate</td>
+<td>用于生成静态文件</td>
+</tr>
+<tr>
+<td>hexo s</td>
+<td>hexo server</td>
+<td>用于启动服务器，进行本地预览</td>
+</tr>
+<tr>
+<td>hexo d</td>
+<td>hexo deploy</td>
+<td>用于将本地文件发布到GitHub</td>
+</tr>
+<tr>
+<td>hexo n “文章名”</td>
+<td>hexo new “文章名”</td>
+<td>用于新建一篇文章</td>
+</tr>
+<tr>
+<td>hexo n page “页面名”</td>
+<td>hexo new page “页面名”</td>
+<td>用于新建网页</td>
+</tr>
+<tr>
+<td>hexo h</td>
+<td>hexo help</td>
+<td>hexo命令帮助查询</td>
+</tr>
+<tr>
+<td>hexo clean</td>
+<td></td>
+<td>清除hexo缓存</td>
+</tr>
+<tr>
+<td>hexo s -g</td>
+<td></td>
+<td>生成并本地预览</td>
+</tr>
+</tbody>
+</table>
+
       
     </div>
 
@@ -594,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备软件工具"><span class="nav-number">1.</span> <span class="nav-text">准备软件工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件安装和配置"><span class="nav-number">2.</span> <span class="nav-text">软件安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">2.1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub设置"><span class="nav-number">2.2.</span> <span class="nav-text">GitHub设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub账号注册"><span class="nav-number">2.2.1.</span> <span class="nav-text">GitHub账号注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">2.2.2.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">2.2.3.</span> <span class="nav-text">配置SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#检查SSH-Keys"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">检查SSH Keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成新的SSH-Key"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">生成新的SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#向GitHub中添加SSH-Key"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">向GitHub中添加SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">2.2.3.4.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo安装"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">2.3.1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo安装-1"><span class="nav-number">2.3.2.</span> <span class="nav-text">Hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo初始化"><span class="nav-number">2.3.3.</span> <span class="nav-text">Hexo初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo生成静态文件"><span class="nav-number">2.3.4.</span> <span class="nav-text">Hexo生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进行本地预览"><span class="nav-number">2.3.5.</span> <span class="nav-text">进行本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口占用情况解决"><span class="nav-number">2.3.6.</span> <span class="nav-text">端口占用情况解决</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Hexo"><span class="nav-number">3.</span> <span class="nav-text">使用Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#根目录相关文件介绍"><span class="nav-number">3.1.</span> <span class="nav-text">根目录相关文件介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml文件"><span class="nav-number">3.1.1.</span> <span class="nav-text">_config.yml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scaffolds文件"><span class="nav-number">3.1.2.</span> <span class="nav-text">scaffolds文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source文件"><span class="nav-number">3.1.3.</span> <span class="nav-text">source文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#public-文件"><span class="nav-number">3.1.4.</span> <span class="nav-text">public 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#themes文件"><span class="nav-number">3.1.5.</span> <span class="nav-text">themes文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署本地博客到GitHub上"><span class="nav-number">3.2.</span> <span class="nav-text">部署本地博客到GitHub上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章和网页"><span class="nav-number">3.3.</span> <span class="nav-text">新建文章和网页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改主题"><span class="nav-number">3.4.</span> <span class="nav-text">更改主题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备软件工具"><span class="nav-number">1.</span> <span class="nav-text">准备软件工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件安装和配置"><span class="nav-number">2.</span> <span class="nav-text">软件安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git安装"><span class="nav-number">2.1.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub设置"><span class="nav-number">2.2.</span> <span class="nav-text">GitHub设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub账号注册"><span class="nav-number">2.2.1.</span> <span class="nav-text">GitHub账号注册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">2.2.2.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">2.2.3.</span> <span class="nav-text">配置SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#检查SSH-Keys"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">检查SSH Keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成新的SSH-Key"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">生成新的SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#向GitHub中添加SSH-Key"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">向GitHub中添加SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">2.2.3.4.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo安装"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">2.3.1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo安装-1"><span class="nav-number">2.3.2.</span> <span class="nav-text">Hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo初始化"><span class="nav-number">2.3.3.</span> <span class="nav-text">Hexo初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo生成静态文件"><span class="nav-number">2.3.4.</span> <span class="nav-text">Hexo生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进行本地预览"><span class="nav-number">2.3.5.</span> <span class="nav-text">进行本地预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口占用情况解决"><span class="nav-number">2.3.6.</span> <span class="nav-text">端口占用情况解决</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Hexo"><span class="nav-number">3.</span> <span class="nav-text">使用Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#根目录相关文件介绍"><span class="nav-number">3.1.</span> <span class="nav-text">根目录相关文件介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml文件"><span class="nav-number">3.1.1.</span> <span class="nav-text">_config.yml文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scaffolds文件"><span class="nav-number">3.1.2.</span> <span class="nav-text">scaffolds文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source文件"><span class="nav-number">3.1.3.</span> <span class="nav-text">source文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#public-文件"><span class="nav-number">3.1.4.</span> <span class="nav-text">public 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#themes文件"><span class="nav-number">3.1.5.</span> <span class="nav-text">themes文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署本地博客到GitHub上"><span class="nav-number">3.2.</span> <span class="nav-text">部署本地博客到GitHub上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章和网页"><span class="nav-number">3.3.</span> <span class="nav-text">新建文章和网页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改主题"><span class="nav-number">3.4.</span> <span class="nav-text">更改主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用Hexo命令总结"><span class="nav-number">3.5.</span> <span class="nav-text">常用Hexo命令总结</span></a></li></ol></li></ol></div>
             
 
           </div>
