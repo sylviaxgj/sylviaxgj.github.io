@@ -93,16 +93,27 @@
 
 
 
-<meta name="description" content="死坑到底的前端程序媛！">
+<meta name="description" content="&amp;emsp;&amp;emsp;这篇文章主要记录，如何将hexo博客放在GitHub中io仓库的子目录下（即你的用户名.github.io那个仓库的子目录）。我用的是next主题。之前本来是把博客直接push到io仓库的根目录下的相应分支的，就是在站点配置文件中写的,如下：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown 语法记录">
-<meta property="og:url" content="https://sylviaxgj.git@github.io/hexo/2017/06/10/markdown-语法记录/index.html">
+<meta property="og:title" content="将hexo放在io仓库的子目录下">
+<meta property="og:url" content="https://sylviaxgj.git@github.io/hexo/2017/06/18/将hexo放在io仓库的子目录下/index.html">
 <meta property="og:site_name" content="Sylvia&#39; Blog">
-<meta property="og:description" content="死坑到底的前端程序媛！">
-<meta property="og:updated_time" content="2017-06-10T08:30:16.251Z">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;这篇文章主要记录，如何将hexo博客放在GitHub中io仓库的子目录下（即你的用户名.github.io那个仓库的子目录）。我用的是next主题。之前本来是把博客直接push到io仓库的根目录下的相应分支的，就是在站点配置文件中写的,如下：">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/gitClone%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E7%AB%99%E7%82%B9public%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E7%AB%99%E7%82%B9URL%E7%9A%84%E4%BF%AE%E6%94%B9%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/a%E5%85%83%E7%B4%A0%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/develop%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/add%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/status%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/commit%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/push%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:updated_time" content="2017-06-18T08:33:07.321Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown 语法记录">
-<meta name="twitter:description" content="死坑到底的前端程序媛！">
+<meta name="twitter:title" content="将hexo放在io仓库的子目录下">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;这篇文章主要记录，如何将hexo博客放在GitHub中io仓库的子目录下（即你的用户名.github.io那个仓库的子目录）。我用的是next主题。之前本来是把博客直接push到io仓库的根目录下的相应分支的，就是在站点配置文件中写的,如下：">
+<meta name="twitter:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 
 
 
@@ -130,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://sylviaxgj.git@github.io/hexo/2017/06/10/markdown-语法记录/"/>
+  <link rel="canonical" href="https://sylviaxgj.git@github.io/hexo/2017/06/18/将hexo放在io仓库的子目录下/"/>
 
 
 
 
 
-  <title>markdown 语法记录 | Sylvia' Blog</title>
+  <title>将hexo放在io仓库的子目录下 | Sylvia' Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -280,7 +291,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://sylviaxgj.git@github.io/hexo/hexo/2017/06/10/markdown-语法记录/">
+    <link itemprop="mainEntityOfPage" href="https://sylviaxgj.git@github.io/hexo/hexo/2017/06/18/将hexo放在io仓库的子目录下/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sylvia">
@@ -297,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">markdown 语法记录</h1>
+          <h1 class="post-title" itemprop="name headline">将hexo放在io仓库的子目录下</h1>
         
 
         <div class="post-meta">
@@ -309,8 +320,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-10T16:30:16+08:00">
-                2017-06-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-18T13:05:51+08:00">
+                2017-06-18
               </time>
             
 
@@ -328,7 +339,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/hexo/2017/06/10/markdown-语法记录/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/hexo/2017/06/18/将hexo放在io仓库的子目录下/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -337,7 +348,7 @@
 
           
           
-             <span id="/hexo/2017/06/10/markdown-语法记录/" class="leancloud_visitors" data-flag-title="markdown 语法记录">
+             <span id="/hexo/2017/06/18/将hexo放在io仓库的子目录下/" class="leancloud_visitors" data-flag-title="将hexo放在io仓库的子目录下">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -370,7 +381,17 @@
       
 
       
-        
+        <p> &emsp;&emsp;这篇文章主要记录，如何将hexo博客放在GitHub中io仓库的子目录下（即<code>你的用户名.github.io</code>那个仓库的子目录）。我用的是<strong>next主题</strong>。之前本来是把博客直接push到io仓库的根目录下的相应分支的，就是在站点配置文件中写的,如下：<br><a id="more"></a><br> <img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E4%BF%AE%E6%94%B9%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6d%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;然后，每次执行<code>hexo d</code>时，直接把public文件夹中生成的内容push到io仓库的对应分支上了。但是有小伙伴发现执行<code>hexo d</code>时，特别的简单粗暴，因为它直接把你之前io仓库的内容给覆盖了，那我之前的内容就没有了，那如何在保留我io仓库原本的内容的同时，将博客也push到GitHub上呢？这里我是把博客push到了io仓库的子目录了，感谢小伙伴赵py的帮助！</p>
+<h1 id="设置io仓库的本地仓库"><a href="#设置io仓库的本地仓库" class="headerlink" title="设置io仓库的本地仓库"></a>设置io仓库的本地仓库</h1><p>&emsp;&emsp;首先，将你GitHub上的io仓库clone到本地。<br><br>&emsp;&emsp;在电脑的任意一个位置创建一个文件夹，用来存放GitHub上的仓库(我在E盘下创建了GitHub文件夹)。打开该文件夹，右击<code>git bash here</code>打开git命令行。<br><br>&emsp;&emsp;接下来，获取你的GitHub上io仓库的链接，打开你的GitHub的io仓库，在右边页面可以看到下图界面，可以选择使用SSH或者HTTPS，然后相应的链接出现在下框中，单击链接右边的图标，此时链接已经复制到了剪贴板上了。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/gitClone%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br>&emsp;&emsp;最后在git命令行中执行如下命令，就可以将你的io仓库复制到本地了。<br><code>git clone git@github.com:sylviaxgj/sylviaxgj.github.io.git</code><br><br>&emsp;&emsp;clone成功以后，在你创建的文件夹下（我的是GitHub），会有一个名为<code>你的GitHub名.github.io</code>的文件夹（以下简称为io仓库，我的是sylviaxgj.github.io），里面包含了你GitHub上io仓库中的内容。现在我们要在保留这些内容的前提下，将hexo博客发布到io仓库中。<br><br>&emsp;&emsp;进入<code>你的GitHub名.github.io</code>的文件夹（我的是sylviaxgj.github.io），然后，新建一个文件夹（我的是hexo）用来存放你的hexo博客的内容。</p>
+<h1 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h1><p>&emsp;&emsp;我们都知道根目录下public文件中存放着生成的静态网页文件，就是这里面的内容将来会push的GitHub上的，现在我们修改站点配置文件，更改其中的public_dir字段，将其修改为刚刚在本地io仓库创建的hexo的目录：<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E7%AB%99%E7%82%B9public%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>将public_dir字的值段更改为本地io仓库下的hexo目录，这样每次执行<code>hexo g</code>后，就在io仓库的hexo文件夹中生成相应的静态网页文件，而不会在hexo根目录下的public中生成静态文件了。<br>&emsp;&emsp;同时，根据站点配置文件的要求修改其中的URL和root字段：<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/%E7%AB%99%E7%82%B9URL%E7%9A%84%E4%BF%AE%E6%94%B9%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br></p>
+<h1 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h1><p>&emsp;&emsp;在hexo的根目录下，打开git，执行<code>hexo clean</code>(清除缓存)，执行成功后，然后再执行<code>hexo g</code>（生成静态文件）。上述命令执行成功后，在你本地的io仓库下的hexo文件夹下，就会生成一堆文件，就是将来要上传到GitHub上的静态文件。<br><br>&emsp;&emsp;此时，把hexo博客的内容已经放入到hexo子文件夹中了，可是，io页面（<a href="https://你的GitHub名字.github.io/" target="_blank" rel="external">https://你的GitHub名字.github.io/</a> ，我的是<a href="https://sylviaxgj.github.io" target="_blank" rel="external">https://sylviaxgj.github.io</a> ）的主页内容是io仓库根目录下的index.html中的内容，博客主页面的内容在hexo文件中的index.html中，要想把hexo博客和主页链接起来，还需要在index.html中添加&lt;a&gt; 元素。<br><br>&emsp;&emsp;在本地io仓库下，打开index.html文件（没有的话，自己新建一个HTML文件，具体请百度），在&lt;body&gt;中添加如下内容：<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/a%E5%85%83%E7%B4%A0%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;其中，hexo是你保存博客的那个文件夹（即站点配置文件中public_dir字段的值），href表示此超链接指向的内容，blog表示显示的链接名称，你可以起任何你喜欢的名称。<br><br>&emsp;&emsp;这样，就将博客的内容和io主页面的内容链接起来了，将来打开你的io页面（<a href="https://你的GitHub名字.github.io/" target="_blank" rel="external">https://你的GitHub名字.github.io/</a> ，我的是<a href="https://sylviaxgj.github.io" target="_blank" rel="external">https://sylviaxgj.github.io</a> ），会看见一个可以点击的<strong>blog</strong>（或者你起的其他名字），点击，就会转到你的hexo博客主页。</p>
+<h1 id="使用Git来上传"><a href="#使用Git来上传" class="headerlink" title="使用Git来上传"></a>使用Git来上传</h1><p>&emsp;&emsp;到此时，本地仓库中既有了你之前的内容，而且还有了hexo博客的内容，而且还链接起来了，那怎么把这些内容上传到GitHub上呢？使用Git！<br></p>
+<h2 id="git切换分支"><a href="#git切换分支" class="headerlink" title="git切换分支"></a>git切换分支</h2><p>&emsp;&emsp;在本地io仓库下，打开git命令行，我先将本地仓库的分支切换为develop分支，将提交的内容都push到develop分支上，这样保证master分支，随时都是正确的版本或者页面，在develop分支上测试无误以后，再合并的master分支上。切换以后，在git命令行当前路径的后面就有一个括号，里面表示当前分支的名字。<br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/develop%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;若没有develop分支，则使用<code>git checkout -b 分支名</code> 来创建并切换到该分支。</p>
+<h2 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h2><p>&emsp;&emsp;git add是用来将文件添加到暂存区的，这里我每次都使用<code>git add .</code>（注意这后面与个点），表示将当前所有内容提交到暂存区。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/add%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br></p>
+<h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p>&emsp;&emsp;<code>git add .</code>执行完以后，可以使用<code>git status</code>来查看当前git仓库的状态（当然这一步可以不用执行，只是为了检查，建议执行）：<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/status%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;其中显示了你距离上个版本的改动，表示已经在暂存区，需要提交的内容。</p>
+<h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><p>&emsp;&emsp;接下来，就是把上述已经在暂存的内容提交，执行<code>git commit -m &quot;此处填写你距上一次的改动&quot;</code>。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/commit%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;执行完成以后，就将改动提交到了仓库的版本区（即.git文件）。</p>
+<h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>&emsp;&emsp;最后，执行<code>git push</code>，将本地仓库的内容push到GitHub上的远程仓库中<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/push%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""></p>
+
       
     </div>
 
@@ -406,15 +427,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/" rel="next" title="GitHub-Hexo搭建个人独立博客血泪过程">
+                <i class="fa fa-chevron-left"></i> GitHub-Hexo搭建个人独立博客血泪过程
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/" rel="prev" title="GitHub-Hexo搭建个人独立博客血泪过程">
-                GitHub-Hexo搭建个人独立博客血泪过程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -469,8 +490,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/hexo/images/kid.jpg"
@@ -525,6 +555,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置io仓库的本地仓库"><span class="nav-number">1.</span> <span class="nav-text">设置io仓库的本地仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">2.</span> <span class="nav-text">修改站点配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成静态文件"><span class="nav-number">3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Git来上传"><span class="nav-number">4.</span> <span class="nav-text">使用Git来上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git切换分支"><span class="nav-number">4.1.</span> <span class="nav-text">git切换分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-add"><span class="nav-number">4.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-status"><span class="nav-number">4.3.</span> <span class="nav-text">git status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">4.4.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push"><span class="nav-number">4.5.</span> <span class="nav-text">git push</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
