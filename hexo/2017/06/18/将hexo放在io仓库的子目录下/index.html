@@ -109,7 +109,11 @@
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/status%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/commit%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/push%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
-<meta property="og:updated_time" content="2017-06-18T08:33:07.321Z">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge0%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge1%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge2%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge3%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
+<meta property="og:updated_time" content="2017-06-18T09:43:00.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将hexo放在io仓库的子目录下">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;这篇文章主要记录，如何将hexo博客放在GitHub中io仓库的子目录下（即你的用户名.github.io那个仓库的子目录）。我用的是next主题。之前本来是把博客直接push到io仓库的根目录下的相应分支的，就是在站点配置文件中写的,如下：">
@@ -391,6 +395,70 @@
 <h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p>&emsp;&emsp;<code>git add .</code>执行完以后，可以使用<code>git status</code>来查看当前git仓库的状态（当然这一步可以不用执行，只是为了检查，建议执行）：<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/status%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;其中显示了你距离上个版本的改动，表示已经在暂存区，需要提交的内容。</p>
 <h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><p>&emsp;&emsp;接下来，就是把上述已经在暂存的内容提交，执行<code>git commit -m &quot;此处填写你距上一次的改动&quot;</code>。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/commit%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;执行完成以后，就将改动提交到了仓库的版本区（即.git文件）。</p>
 <h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>&emsp;&emsp;最后，执行<code>git push</code>，将本地仓库的内容push到GitHub上的远程仓库中<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/push%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""></p>
+<h1 id="在GitHub上合并分支"><a href="#在GitHub上合并分支" class="headerlink" title="在GitHub上合并分支"></a>在GitHub上合并分支</h1><h2 id="查看新的push分支"><a href="#查看新的push分支" class="headerlink" title="查看新的push分支"></a>查看新的push分支</h2><p>&emsp;&emsp;登录你的GitHub，然后进入io仓库，你会看见显示一条带浅色背景的文字，表示你最新push的分支，然后点击右侧的<strong>Compare&amp;pull request</strong>，进行查看。<br><br>&emsp;&emsp;若是没显示，则将分支切换到develop分支，然后点击旁边的<strong>New pull request</strong>,自己进行查看。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge0%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br></p>
+<h2 id="Open-a-pull-request"><a href="#Open-a-pull-request" class="headerlink" title="Open a pull request"></a>Open a pull request</h2><p>&emsp;&emsp;这一步表示，新建了一个合并分支请求，这里可以填写，你与上一次版本的改变的一个简单的描述。填写完以后，点击<strong>Create pull request</strong>。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge1%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br></p>
+<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><p>&emsp;&emsp;这一步会对上一步的合并请求进行检查，若是检查无误则可以允许合并，这里一般是仓库的拥有者来允许合并的，在本文中我们对自己的仓库发起了<strong>New pull request</strong>，所以自己进可以合并了。若是对别人的仓库fork，然后clone到本地修改，最后发起<strong>New pull request</strong>时，则是仓库的拥有者才有权限进行允许合并。<br><br>&emsp;&emsp;检查无误以后，点击<strong>Merge pull request</strong>即可。</p>
+<p><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge2%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br></p>
+<h2 id="确认合并"><a href="#确认合并" class="headerlink" title="确认合并"></a>确认合并</h2><p>&emsp;&emsp;最后一步，点击<strong>*Confirm merge</strong>即可。<br><br><img src="http://ordb2n1wt.bkt.clouddn.com/%E7%AC%AC%E4%BA%8C%E7%AF%87-%E6%94%BE%E5%9C%A8io%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8B/merge3%EF%BC%88%E7%94%A8%EF%BC%89.JPG" alt=""><br><br>&emsp;&emsp;完成以后，进入（<a href="https://你的GitHub名字.github.io/" target="_blank" rel="external">https://你的GitHub名字.github.io/</a>  ）查看就行了。</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>&emsp;&emsp;  <strong>切记！！以后禁止使用hexo 的命令！因为，使用<code>hexo d</code>命令会直接把博客内容push到io仓库的根目录（按照在站点配置文件中写的那样），从而覆盖了io仓库的其他内容</strong></p>
+<h1 id="git常用命令总结"><a href="#git常用命令总结" class="headerlink" title="git常用命令总结"></a>git常用命令总结</h1><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git add file</td>
+<td>将文件file添加到暂存区</td>
+</tr>
+<tr>
+<td>git commit -m “提交的简单描述”</td>
+<td>将暂存区的内容提交到本地仓库</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>查看当前仓库中的状态</td>
+</tr>
+<tr>
+<td>git commit -am “提交的简单描述”</td>
+<td>git add和git commit -m “信息”的合并</td>
+</tr>
+<tr>
+<td>git push</td>
+<td>将本地仓库推到远程仓库的对应分支上</td>
+</tr>
+<tr>
+<td>git branch 分支1</td>
+<td>创建分支1</td>
+</tr>
+<tr>
+<td>git checkout 分支1</td>
+<td>切换到分支1</td>
+</tr>
+<tr>
+<td>git checkout -b 分支1</td>
+<td>创建并切换到分支1</td>
+</tr>
+<tr>
+<td>git push origin –delete 分支1</td>
+<td>删除远程分支1</td>
+</tr>
+<tr>
+<td>git branch -d 分支1</td>
+<td>删除本地已合并分支</td>
+</tr>
+<tr>
+<td>git branch -D 分支1</td>
+<td>强制删除本地未合并分支1</td>
+</tr>
+<tr>
+<td>git clone 仓库的地址</td>
+<td>clone分支到本地</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -565,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置io仓库的本地仓库"><span class="nav-number">1.</span> <span class="nav-text">设置io仓库的本地仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">2.</span> <span class="nav-text">修改站点配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成静态文件"><span class="nav-number">3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Git来上传"><span class="nav-number">4.</span> <span class="nav-text">使用Git来上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git切换分支"><span class="nav-number">4.1.</span> <span class="nav-text">git切换分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-add"><span class="nav-number">4.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-status"><span class="nav-number">4.3.</span> <span class="nav-text">git status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">4.4.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push"><span class="nav-number">4.5.</span> <span class="nav-text">git push</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置io仓库的本地仓库"><span class="nav-number">1.</span> <span class="nav-text">设置io仓库的本地仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改站点配置文件"><span class="nav-number">2.</span> <span class="nav-text">修改站点配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成静态文件"><span class="nav-number">3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Git来上传"><span class="nav-number">4.</span> <span class="nav-text">使用Git来上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git切换分支"><span class="nav-number">4.1.</span> <span class="nav-text">git切换分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-add"><span class="nav-number">4.2.</span> <span class="nav-text">git add</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-status"><span class="nav-number">4.3.</span> <span class="nav-text">git status</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">4.4.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push"><span class="nav-number">4.5.</span> <span class="nav-text">git push</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在GitHub上合并分支"><span class="nav-number">5.</span> <span class="nav-text">在GitHub上合并分支</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看新的push分支"><span class="nav-number">5.1.</span> <span class="nav-text">查看新的push分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Open-a-pull-request"><span class="nav-number">5.2.</span> <span class="nav-text">Open a pull request</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合并分支"><span class="nav-number">5.3.</span> <span class="nav-text">合并分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确认合并"><span class="nav-number">5.4.</span> <span class="nav-text">确认合并</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git常用命令总结"><span class="nav-number">7.</span> <span class="nav-text">git常用命令总结</span></a></li></ol></div>
             
 
           </div>
