@@ -77,7 +77,7 @@
 <link href="/hexo/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -94,6 +94,7 @@
 
 
 <meta name="description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta property="og:url" content="https://sylviaxgj.git@github.io/hexo/2017/06/10/GitHub-Hexo搭建个人独立博客血泪过程/index.html">
@@ -114,7 +115,7 @@
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/%E5%AE%89%E8%A3%85d%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/theme%EF%BC%88%E7%94%A8%EF%BC%89.JPG">
 <meta property="og:image" content="http://ordb2n1wt.bkt.clouddn.com/%E6%90%AD%E5%BB%BAhexo-GitHub/hexo/next%E4%B8%BB%E9%A2%98.JPG">
-<meta property="og:updated_time" content="2017-06-12T04:03:11.437Z">
+<meta property="og:updated_time" content="2017-07-07T04:46:47.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub-Hexo搭建个人独立博客血泪过程">
 <meta name="twitter:description" content="这是我的第一篇博客文章，想想还是有些小激动的。下面来跟大家分享一下，我搭建博客的详细过程和一些小曲折。总体来说，还算是顺利吧！ 准备软件工具  git客户端   作用：把本地的hexo内容提交到GitHub上去,我的版本是git@2.12.2（git version命令） node.js">
@@ -246,8 +247,18 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/hexo/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
-          <a href="/hexo/archives/" rel="section">
+          <a href="/hexo/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -257,7 +268,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/hexo/tags/" rel="section">
+          <a href="/hexo/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -335,6 +346,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/hexo/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -580,6 +613,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/hexo/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
 
       
       
@@ -680,7 +719,7 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/hexo/archives/">
+              <a href="/hexo/archives">
                 <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
@@ -688,7 +727,25 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/hexo/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/hexo/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
